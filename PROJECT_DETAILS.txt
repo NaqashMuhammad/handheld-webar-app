@@ -28,3 +28,8 @@ Instructions to Run:
    - If using marker-based AR, print or display the marker image on a screen. Point your device's camera at it to see the AR content.
    - If using geolocation-based AR, make sure your device's GPS is enabled, and the AR content will automatically appear based on your location.
 
+Live Link:  
+You can test the live version here: [AR Energy Visuals - Live](https://naqashmuhammad.github.io/handheld-webar-app/)
+
+Please note that you will need the **"hiro" marker image** for the marker-based AR. The image is included in the project files under the name **`scane_image`**. Simply print or display it to scan it with your device’s camera.
+
