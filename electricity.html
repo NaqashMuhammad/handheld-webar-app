@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+</head>
+
+<body>
+
+    <a-scene mindar-image="imageTargetSrc: ./your-marker.mind;" color-space="sRGB"
+        renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+
+        <a-assets>
+            <!-- Display image -->
+            <img id="card" src="./display-image.jpg" />
+            <a-asset-item id="avatarModel"
+                src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-camera position="0 0 2" look-controls="enabled: false"></a-camera>
+
+        <a-entity mindar-image-target="targetIndex: 0">
+            <!-- <a-plane src="#card" position="0 0 -1" height="0.552" width="1"></a-plane> -->
+
+            <!-- SEECS Building: 616,564 kWh, NA -->
+            <a-entity position="-0.45 0 0">
+                <a-box position="0 0.30 0" height="0.60" width="0.08" depth="0.08" color="#2196F3"></a-box>
+                <a-text value="SEECS" position="0 0.6 0" align="center" width="2" color="#fff"></a-text>
+            </a-entity>
+
+            <!-- Marine Centre Wales: 404,643 kWh, 4,746.70 -->
+            <a-entity position="-0.15 0 0">
+                <a-box position="0 0.20 0" height="0.40" width="0.08" depth="0.08" color="#2196F3"></a-box>
+                <a-box position="0.13 0.012 0" height="0.024" width="0.08" depth="0.08" color="#4CAF50"></a-box>
+                <a-text value="Marine" position="0 0.5 0" align="center" width="2" color="#fff"></a-text>
+            </a-entity>
+
+            <!-- Thoday Building: 407,043 kWh, 17,835.78 -->
+            <a-entity position="0.15 0 0">
+                <a-box position="0 0.20 0" height="0.40" width="0.08" depth="0.08" color="#2196F3"></a-box>
+                <a-box position="0.13 0.09 0" height="0.18" width="0.08" depth="0.08" color="#4CAF50"></a-box>
+                <a-text value="Thoday" position="0 0.5 0" align="center" width="2" color="#fff"></a-text>
+            </a-entity>
+
+            <!-- Arts Building: 2,921,815 kWh, 837.35 -->
+            <a-entity position="0.45 0 0">
+                <a-box position="0 1.46 0" height="2.92" width="0.08" depth="0.08" color="#2196F3"></a-box>
+                <a-box position="0.13 0.0004 0" height="0.0008" width="0.08" depth="0.08" color="#4CAF50"></a-box>
+                <a-text value="Arts" position="0 1.6 0" align="center" width="2" color="#fff"></a-text>
+            </a-entity>
+        </a-entity>
+
+
+
+    </a-scene>
+
+
+</body>
+
+</html>

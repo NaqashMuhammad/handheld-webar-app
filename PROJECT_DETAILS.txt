@@ -1,0 +1,30 @@
+Project Name: AR Energy Visuals
+
+Description:
+This web-based AR application displays environmental data (gas and electricity usage) in the form of 3D objects (e.g., bar-charts, floating panels, etc.) overlaid on an AR marker or a specific geolocation.
+
+Features:
+- Interactive AR interface.
+- Visualization of gas and electricity usage data.
+- Easy-to-use buttons to navigate to each visualization.
+
+Technologies Used:
+- HTML, CSS
+- JavaScript (for AR integration)
+- AR.js, A-Frame (for Augmented Reality features)
+
+How it Works:
+1. The user selects a data visualization (Gas Usage or Electricity Usage).
+2. The application overlays the selected data in 3D on a marker or real-world location.
+3. The user needs to scan a specific AR marker (image) or use a specific geolocation.
+4. The application utilizes AR.js and A-Frame to render the AR content on the screen.
+   - **For marker-based AR**: Use a printed or displayed "hiro" marker (or another specified image) in front of your webcam or mobile device camera.
+   - **For geolocation-based AR**: The app will use the device's GPS to display data relevant to your location (such as a landmark in Bangor).
+
+Instructions to Run:
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in your browser.
+3. Use a webcam or mobile device to view the AR content.
+   - If using marker-based AR, print or display the marker image on a screen. Point your device's camera at it to see the AR content.
+   - If using geolocation-based AR, make sure your device's GPS is enabled, and the AR content will automatically appear based on your location.
+
